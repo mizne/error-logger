@@ -1,6 +1,6 @@
 const router = new (require('koa-router'))()
 
-router.get('/', async (ctx, next) => {
+router.get('/api/v1/user', async (ctx, next) => {
   ctx.body = {everything: 42}
 })
 
