@@ -14,6 +14,10 @@ const ErrorMessageSchema = new Schema({
     type: String,
     required: true
   },
+  level: {
+    type: String,
+    required: true
+  },
   method : String,
   description: String,
   create_at: {
