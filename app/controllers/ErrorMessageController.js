@@ -6,7 +6,7 @@ module.exports = {
   async find(ctx, next) {
     try {
       const errorMessages = await ErrorMessage.find()
-      ctx.body = new ApiSuccess(100, 'find error-message success', errorMessages)
+      ctx.body = new ApiSuccess(0, 'find error-message success', errorMessages)
     } catch(e) {
       const errMsg = `find error-message failed; error: ${e.message}`
       logger.error(errMsg)
@@ -17,7 +17,7 @@ module.exports = {
   async save(ctx, next) {
     try {
       const result = await ErrorMessage.create(ctx.request.body)
-      ctx.body = new ApiSuccess(100, 'save error-message success', result)
+      ctx.body = new ApiSuccess(0, 'save error-message success', result)
     } catch(e) {
       const errMsg = `save error-message failed; error: ${e.message}`
       logger.error(errMsg)
