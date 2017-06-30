@@ -2,6 +2,10 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const ErrorMessageSchema = new Schema({
+  appName: {
+    type: String,
+    required: true
+  },
   tenantId: {
     type: String,
     required: true
