@@ -1,11 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const ErrorMessageSchema = new Schema({
-  appName: {
-    type: String,
-    required: true
-  },
+const MobileAdminSchema = new Schema({
   tenantId: {
     type: String,
     required: true
@@ -31,6 +27,6 @@ const ErrorMessageSchema = new Schema({
   update_at: Date,
 })
 
-const ErrorMessage = mongoose.model('ErrorMessage', ErrorMessageSchema)
+const MobileAdmin = mongoose.model('MobileAdmin', MobileAdminSchema)
 
-module.exports = ErrorMessage
+module.exports = MobileAdmin
