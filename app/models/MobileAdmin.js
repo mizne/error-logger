@@ -20,11 +20,11 @@ const MobileAdminSchema = new Schema({
   },
   method : String,
   description: String,
-  create_at: {
+  createdAt: {
     type   : Date,
     default: Date.now,
   },
-  update_at: Date,
+  updatedAt: Date,
 })
 
 const MobileAdmin = mongoose.model('MobileAdmin', MobileAdminSchema)

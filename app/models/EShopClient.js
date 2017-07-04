@@ -28,11 +28,11 @@ const EShopClientSchema = new Schema({
   },
   method : String,
   description: String,
-  create_at: {
+  createdAt: {
     type   : Date,
     default: Date.now,
   },
-  update_at: Date,
+  updatedAt: Date,
 })
 
 const EShopClient = mongoose.model('EShopClient', EShopClientSchema)

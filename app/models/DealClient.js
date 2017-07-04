@@ -24,11 +24,11 @@ const DealClientSchema = new Schema({
   },
   method : String,
   description: String,
-  create_at: {
+  createdAt: {
     type   : Date,
     default: Date.now,
   },
-  update_at: Date,
+  updatedAt: Date,
 })
 
 const DealClient = mongoose.model('DealClient', DealClientSchema)
