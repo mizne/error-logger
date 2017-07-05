@@ -30,7 +30,7 @@ module.exports = function(app) {
   app.use(koaBody())
   app.use(convert(cors()))
 
-  app.use(timeCost())
+  // app.use(timeCost())
 
   app.use(static(path.join(__dirname, '..', 'public/images')))
 
