@@ -2,6 +2,10 @@ const app = new (require('koa'))()
 const port = 8181
 const logger = require('koa-log4').getLogger('app')
 
+require('pmx').init({
+  http: true
+})
+
 require('./app/models/db')
 
 // 绑定中间件

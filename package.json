@@ -17,6 +17,7 @@
     "koa-log4": "^2.2.1",
     "koa-router": "^7.2.0",
     "koa-static": "^3.0.0",
-    "mongoose": "^4.10.6"
+    "mongoose": "^4.10.6",
+    "pmx": "^1.2.0"
   }
 }
