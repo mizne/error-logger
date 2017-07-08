@@ -20,6 +20,9 @@ const MobileAdminSchema = new Schema({
   },
   method : String,
   description: String,
+  devicePlatform: String,
+  deviceVersion: String,
+  deviceUUID: String,
   createdAt: {
     type   : Date,
     default: Date.now,
