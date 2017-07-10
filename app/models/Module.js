@@ -18,9 +18,9 @@ const ModuleSchema = new Schema({
 })
 
 ModuleSchema.statics.saveIfNotExisit = async function (condition) {
-  const item = await Module.findOne(condition)
-  if (item) {
-    return 'item is exisit'
+  const module = await Module.findOne(condition)
+  if (module) {
+    return `module: ${module.name} is exisit`  
   }
   const result = await Module.create(condition)
   return result
